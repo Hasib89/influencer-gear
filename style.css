@@ -16,7 +16,7 @@ body{
     padding: 0 30px;
 }
 
-h3{
+.product-title{
     margin-top: 40px;
 }
 
@@ -53,4 +53,37 @@ h3{
 .second-banner img{
     width: 300px;
     margin-left: 80px;
+}
+
+/* ----------------
+collections style
+-------------------*/
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   grid-row-gap: 25px;
+}
+
+
+.collection .collection-banner img{
+    width: 200px;
+    height: 150px;
+
+}
+
+.collection-detail{
+    margin-top: 10px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.product-info{
+    font-size: 12px;
+}
+
+.feature-banner img{
+    width: 250px;
+    height: 200px;
 }
