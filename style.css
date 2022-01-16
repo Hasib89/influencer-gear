@@ -53,17 +53,23 @@ body{
 .second-banner img{
     width: 300px;
     margin-left: 80px;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
 }
 
 /* ----------------
 collections style
 -------------------*/
+.first-collection{
+    text-align: center;
+    margin: 40px 0;
+}
+
 .collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
    grid-row-gap: 25px;
 }
-
 
 .collection .collection-banner img{
     width: 200px;
@@ -83,7 +89,39 @@ collections style
     font-size: 12px;
 }
 
+.delivery-item{
+    margin: 50px 0;
+}
+
 .feature-banner img{
-    width: 250px;
+    width: 350px;
     height: 200px;
+}
+
+.footer-area{
+    background-color: hsl(233, 93%, 5%);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 12px; 
+}
+
+/* responsive css*/
+
+@media (max-width:950px) {
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .first-banner h1{
+        max-width: 800px;
+    }
+}
+
+@media (max-width:550px) {
+    .collections,
+    .banner
+    {
+        grid-template-columns: 1fr;
+    }
+    
 }
