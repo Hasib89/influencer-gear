@@ -23,6 +23,7 @@ body{
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
 }
 
 .first-banner{
@@ -55,6 +56,12 @@ body{
     margin-left: 80px;
     border: 1px solid gainsboro;
     border-radius: 50%;
+    
+}
+
+.banner:hover .second-banner{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
 }
 
 /* ----------------
